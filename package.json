@@ -20,7 +20,7 @@
         "watch": "parallelshell \"npm run watch:sass\" \"npm run watch:autoprefixer\" \"npm run watch:browser-sync\" ",
         "watch:sass": "node-sass --output-style expanded --source-map true sass/style.scss css/style.css --watch",
         "watch:autoprefixer": "onchange -d 100 css/style.css -- autoprefixer-cli -o css/style.prefixed.css css/style.css",
-        "watch:browser-sync": "node_modules/.bin/browser-sync --server --files \"css/*.css,index.html\" "
+        "watch:browser-sync": "node_modules/.bin/browser-sync --server --files \"css/*.css,index.html, js/*.js\" --browser \"chrome\" "
     },
     "keywords": [],
     "author": "",
